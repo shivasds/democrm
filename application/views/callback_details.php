@@ -1,24 +1,13 @@
 <?php 
     defined('BASEPATH') OR exit('No direct script access allowed');
-    $this->load->view('inc/header'); 
+    $this->load->view('inc/admin_header'); 
     $edit = true;
     if (($this->session->userdata("user_type")=="director") || ($this->session->userdata("user_type")=="vp"))
         $edit = false;
     if($siteVisitDate && ($siteVisitDate < date('Y-m-d'))){       
         ?>
         <script type="text/javascript">
-            $(function(){
-                $('#sitevisitModal').modal('show');
-                 $('#sdate-picker').datepicker( {
-            changeMonth: true,
-            changeYear: true,
-            showButtonPanel: true,
-            dateFormat: 'MM/yy',
-            onClose: function(dateText, inst) { 
-                $(this).datepicker('setDate', new Date(inst.selectedYear, inst.selectedMonth, 1));
-            }
-            });
-            });            
+                       
         </script>
         <?php
     }

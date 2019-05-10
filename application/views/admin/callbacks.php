@@ -1,7 +1,6 @@
 <?php 
     defined('BASEPATH') OR exit('No direct script access allowed');
-    $this->load->view('inc/admin_header'); 
-?>
+$this->load->view('inc/admin_header'); ?>
 
 <style>
     @media screen and (min-width: 768px) {
@@ -163,6 +162,9 @@
         </div>
         <div class="col-sm-6">
             <button type="submit" id="admin-search" class="btn btn-success btn-block">Search</button>
+        </div>
+        <div class="col-sm-1">
+            <a href='<?php echo site_url("admin/download")."/100";?>'>Download</a>
         </div>
     </form>
 
@@ -504,7 +506,7 @@ Team Full Basket Property Services Pvt Ltd
                     </div>
                     <div class="col-sm-6 form-group">
                         <label for="email">Booking Month:</label>
-                        <input type="text" class="form-control" id="c_bkngMnth" name="email2" placeholder="Booking Date">
+                        <input type="text" class="form-control" id="c_bkngMnth" name="email2" placeholder="Booking Month">
                     </div>
                     <div class="col-sm-6 form-group">
                         <label for="email">Date of closure:</label>

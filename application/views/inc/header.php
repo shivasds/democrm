@@ -54,10 +54,22 @@
                      });
                 });
                 $('#ui-datepicker-div').draggable();
-                $('.timePicker').each(function(){
-                    $(this).timepicker({ 'timeFormat': 'H:i' });
-                });
+                 $('#c_bkngMnth, #c_estMonthofInvoice').MonthPicker({
+             Button: false
+          });
             });
+            $(function(){
+                $('#sitevisitModal').modal('show');
+                 $('.sdate-picker').datepicker( {
+            changeMonth: true,
+            changeYear: true,
+            showButtonPanel: true,
+            dateFormat: 'MM/yy',
+            onClose: function(dateText, inst) { 
+                $(this).datepicker('setDate', new Date(inst.selectedYear, inst.selectedMonth, 1));
+            }
+            });
+            }); 
         </script>
     </head>
     <body>

@@ -88,6 +88,9 @@
 	                });
 				});
 				$('#ui-datepicker-div').draggable();
+				$('#c_bkngMnth, #c_estMonthofInvoice').MonthPicker({
+             Button: false
+        		  });
 				$('.timePicker').each(function(){
                     $(this).timepicker({ 'timeFormat': 'H:i' });
                 });

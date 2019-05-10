@@ -2292,4 +2292,9 @@ class Admin extends CI_Controller {
     	exit();
     }
 
+    public function exceldownload()
+    {
+    	echo "excel download";
+    }
+
 }

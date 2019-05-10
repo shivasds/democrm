@@ -68,6 +68,7 @@ $route['login/admin'] = 'login/admin';
 $route['callback-details'] 			= 'dashboard/get_callback_details';
 $route['site-visit-report-mail'] 	= 'dashboard/site_visit_report_mail';
 $route['admin/view-site-visit-data'] 		= 'admin/view_site_visit_fixed_data';
+$route['admin/download/(:num)']="admin/exceldownload";
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
