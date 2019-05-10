@@ -4,9 +4,7 @@
     
 if(!$this->session->userdata('permissions') && $this->session->userdata('permissions')=='' ) {
     ?>
-    <script type="text/javascript">
-    alert("testing");
-    </script>
+    
     <style type="text/css">
     .alrtMsg{padding-top: 50px;}
     .alrtMsg i {
